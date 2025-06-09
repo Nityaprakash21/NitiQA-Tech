@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>NitiQA Tech</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .whatsapp-button {
+            position: fixed;
+            bottom: 15px;
+            right: 28px;
+            display: inline-flex;
+            align-items: center;
+            background-color: #038532;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            padding: 14px 24px;
+            border-radius: 50px;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+            text-decoration: none;
+            font-size: 16px;
+            transition: all 0.3s ease-in-out;
+            overflow: hidden;
+            z-index: 9999;
+        }
+        
+        .whatsapp-button::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.15);
+            transform: skewX(-20deg);
+            transition: left 0.4s ease;
+        }
+        
+        .whatsapp-button:hover::before {
+            left: 120%;
+        }
+        
+        .whatsapp-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.5);
+        }
+        
+        .whatsapp-button i {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <iframe src="https://nitiqa-tech.framer.website/"></iframe>
+    <!-- <a href="https://wa.me/your-phone-number" class="whatsapp-button" target="_blank">
+        <i class="fab fa-whatsapp"></i> <span>Contact via WhatsApp</span>
+    </a> -->
+</body>
+
+</html>
